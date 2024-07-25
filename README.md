@@ -17,4 +17,4 @@
 
 -> 페이징 오류 수정
 
-<img src = "https://cafeptthumb-phinf.pstatic.net/MjAyNDA2MjdfOTkg/MDAxNzE5NDY1MTE0MTk5.AU97h6mLWXPfp7TH7A-sG-Jnn8f67LwlJQCXqRVj3lUg.IO_kBSlFq7IjLI64cZpj29xgDO0WYlUgYhqWna1J8AEg.PNG/image.png?type=w1600" width = 450, height = 450>
+<img src = "https://cafeptthumb-phinf.pstatic.net/MjAyNDA2MjdfOTkg/MDAxNzE5NDY1MTE0MTk5.AU97h6mLWXPfp7TH7A-sG-Jnn8f67LwlJQCXqRVj3lUg.IO_kBSlFq7IjLI64cZpj29xgDO0WYlUgYhqWna1J8AEg.PNG/image.png?type=w1600">
