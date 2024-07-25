@@ -3,4 +3,5 @@
 3.프로젝트기간 : 
 4.프로젝트 인원 : 
 5.내용 : 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/fc668193-745e-4d13-a198-3ca19cafbfea/8a2b79d1-644c-4038-9b18-ce6e6247a947/Untitled.png)
+
+https://cafeptthumb-phinf.pstatic.net/MjAyNDA2MjdfOTkg/MDAxNzE5NDY1MTE0MTk5.AU97h6mLWXPfp7TH7A-sG-Jnn8f67LwlJQCXqRVj3lUg.IO_kBSlFq7IjLI64cZpj29xgDO0WYlUgYhqWna1J8AEg.PNG/image.png?type=w1600
