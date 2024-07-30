@@ -17,7 +17,7 @@
 	i1 : ${orderVO.getI1()} | i2 : ${orderVO.getI2()} | 
 <br>	minI : ${orderVO.getMinI()}| maxI : ${orderVO.getMaxI()} | cnt :  ${orderVO.getCnt()}
 	
-	<h2> ¡÷πÆº≠ ∏Ò∑œ <a href = ${path}/index.jsp >(index)</a>
+	<h2> Ï£ºÎ¨∏ÏÑú Î™©Î°ù <a href = ${path}/index.jsp >(index)</a>
 </div> 
   
   <div align="center"> 
@@ -25,11 +25,11 @@
 		<c:set var = "i">${i = orderVO.getI1()}</c:set> <!-- i1 -->
 		<%-- <c:forEach var="li" items="${orderList}"> --%>
 		<c:forEach var="li" items="${orderList}" begin="${orderVO.getI1()}" end="${orderVO.getI2()}" step="1" varStatus="status">
-			<c:if test="${i < orderVO.getI2()}"> <!-- 10∞≥ ¥‹¿ß∑Œ √‚∑¬ -->
+			<c:if test="${i < orderVO.getI2()}"> <!-- 10Í∞ú Îã®ÏúÑÎ°ú Ï∂úÎ†• -->
 				<c:if test="${i == 1}">
 					<tr><td width=50> today </td> <td>${li.get("today")} </td></tr>
 				</c:if>
-					<tr><td colspan=2> <a href="${path}/orderController?sw=detail&orderG=${li.get('orderG')}"> ${i+1}π¯¬∞ ¡÷πÆ </a> </td></tr>
+					<tr><td colspan=2> <a href="${path}/orderController?sw=detail&orderG=${li.get('orderG')}"> ${i+1}Î≤àÏß∏ Ï£ºÎ¨∏ </a> </td></tr>
 					<tr><td width=50> idxOrder </td> <td>${li.get("idxOrder")} </td></tr>
 					<tr><td width=50> orderG </td> <td>${li.get("orderG")} </td></tr>
 					
@@ -39,14 +39,14 @@
 		
 	</table>	
   </div> 
-  <div align="center"> <!-- ∆‰¿Ã¬° -->
- 		<a href="${path}/orderController?sw=S&cnt=1&minI=1&maxI=10"><input type=button value="√≥¿Ω" class='button'></a>
+  <div align="center"> <!-- ÌéòÏù¥Ïßï -->
+ 		<a href="${path}/orderController?sw=S&cnt=1&minI=1&maxI=10"><input type=button value="Ï≤òÏùå" class='button'></a>
   <c:if test="${orderVO.getMinI() == 1}">		
-		<input type=button value="¿Ã¿¸" class='button'>
+		<input type=button value="Ïù¥Ï†Ñ" class='button'>
   </c:if>
   
   <c:if test="${orderVO.getMinI() != 1}">
-  		<a href="${path}/orderController?sw=S&cnt=${orderVO.getCnt()-10.0}&minI=${orderVO.getMinI()-10.0}&maxI=${orderVO.getMinI()-10.0+9}"><input type=button value="¿Ã¿¸" class='button'></a>
+  		<a href="${path}/orderController?sw=S&cnt=${orderVO.getCnt()-10.0}&minI=${orderVO.getMinI()-10.0}&maxI=${orderVO.getMinI()-10.0+9}"><input type=button value="Ïù¥Ï†Ñ" class='button'></a>
   </c:if>
   		
   		
@@ -67,12 +67,12 @@
 		</c:forEach>
   </c:if>
   <c:if test="${orderVO.getMaxI() == orderVO.getTotalPage()}">
-		<input type=button value="¥Ÿ¿Ω" class='button'>
-		<input type=button value="∏∂¡ˆ∏∑" class='button'>
+		<input type=button value="Îã§Ïùå" class='button'>
+		<input type=button value="ÎßàÏßÄÎßâ" class='button'>
   </c:if>
   <c:if test="${orderVO.getMaxI() !=  orderVO.getTotalPage()}">
-		<a href="${path}/orderController?sw=S&cnt=${orderVO.getMinI()+10.0}&minI=${orderVO.getMinI()+10.0}&maxI=${orderVO.getMaxI()+10.0}"><input type=button value="¥Ÿ¿Ω" class='button'></a>
-		<a href="${path}/orderController?sw=S&cnt=${orderVO.getTotalPage()-1}&minI=${orderVO.getTotalPage()-orderVO.getTotalPage()%10+1.0}&maxI=${orderVO.getTotalPage()*1.0}"><input type=button value="∏∂¡ˆ∏∑" class='button'></a>
+		<a href="${path}/orderController?sw=S&cnt=${orderVO.getMinI()+10.0}&minI=${orderVO.getMinI()+10.0}&maxI=${orderVO.getMaxI()+10.0}"><input type=button value="Îã§Ïùå" class='button'></a>
+		<a href="${path}/orderController?sw=S&cnt=${orderVO.getTotalPage()-1}&minI=${orderVO.getTotalPage()-orderVO.getTotalPage()%10+1.0}&maxI=${orderVO.getTotalPage()*1.0}"><input type=button value="ÎßàÏßÄÎßâ" class='button'></a>
    </c:if>
   	
   </div>
