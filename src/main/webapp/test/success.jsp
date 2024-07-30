@@ -41,12 +41,12 @@
   </div> 
   <div align="center"> <!-- 페이징 -->
  		<a href="${path}/orderController?sw=S&cnt=1&minI=1&maxI=10"><input type=button value="처음" class='button'></a>
-  <c:if test="${orderVO.getMaxI() == orderVO.getCnt()}">		
-		<a href="${path}/orderController?sw=S&cnt=${orderVO.getCnt()-10.0}&minI=${orderVO.getMinI()-10.0}&maxI=${orderVO.getMinI()-10.0+9}"><input type=button value="이전" class='button'></a>
+  <c:if test="${orderVO.getMinI() == 1}">		
+		<input type=button value="이전" class='button'>
   </c:if>
   
-  <c:if test="${orderVO.getMaxI() != orderVO.getCnt()}">
-  		<a href="${path}/orderController?sw=S&cnt=${orderVO.getCnt()-10.0}&minI=${orderVO.getMinI()-10.0}&maxI=${orderVO.getMaxI()-10.0}"><input type=button value="이전" class='button'></a>
+  <c:if test="${orderVO.getMinI() != 1}">
+  		<a href="${path}/orderController?sw=S&cnt=${orderVO.getCnt()-10.0}&minI=${orderVO.getMinI()-10.0}&maxI=${orderVO.getMinI()-10.0+9}"><input type=button value="이전" class='button'></a>
   </c:if>
   		
   		
@@ -66,8 +66,15 @@
 			</a>
 		</c:forEach>
   </c:if>
+  <c:if test="${orderVO.getMaxI() == orderVO.getTotalPage()}">
+		<input type=button value="다음" class='button'>
+		<input type=button value="마지막" class='button'>
+  </c:if>
+  <c:if test="${orderVO.getMaxI() !=  orderVO.getTotalPage()}">
 		<a href="${path}/orderController?sw=S&cnt=${orderVO.getMinI()+10.0}&minI=${orderVO.getMinI()+10.0}&maxI=${orderVO.getMaxI()+10.0}"><input type=button value="다음" class='button'></a>
 		<a href="${path}/orderController?sw=S&cnt=${orderVO.getTotalPage()-1}&minI=${orderVO.getTotalPage()-orderVO.getTotalPage()%10+1.0}&maxI=${orderVO.getTotalPage()*1.0}"><input type=button value="마지막" class='button'></a>
+   </c:if>
+  	
   </div>
   <br>
 </body>
