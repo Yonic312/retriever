@@ -4,5 +4,6 @@
 4.프로젝트 인원 : 1인 <br>
 5.내용 : 사용자 편의성을 강화하여 효율적으로 상품을 주문할 수 있는 쇼핑몰을 구현했습니다. <br>
 
+ppt : https://www.miricanvas.com/v/13ep64x
 -----------------
 <img src = "https://cafeptthumb-phinf.pstatic.net/MjAyNDA2MjdfOTkg/MDAxNzE5NDY1MTE0MTk5.AU97h6mLWXPfp7TH7A-sG-Jnn8f67LwlJQCXqRVj3lUg.IO_kBSlFq7IjLI64cZpj29xgDO0WYlUgYhqWna1J8AEg.PNG/image.png?type=w1600">
